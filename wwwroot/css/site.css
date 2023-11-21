@@ -14,13 +14,19 @@ html {
 }
 
 body {
-    background-image: url('../images/burgerImages/3-burgers-image.jpeg');
+    background-color: whitesmoke;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 60px;
 }
 
-.block-containers-bg-colours {
-    background-color: aliceblue;
+.bg-darkgrey {
+    background-color: dimgrey;
 }
+
+.bg-lightgrey {
+    background-color: lightgray;
+}
+
+.
