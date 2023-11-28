@@ -29,4 +29,9 @@ body {
     background-color: lightgray;
 }
 
+.custom-img {
+    height: 200px;
+    object-fit: cover;
+}
+
 .

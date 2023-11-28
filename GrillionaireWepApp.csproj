@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Checkout\" />
     <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\Member\" />
   </ItemGroup>
 
   <ItemGroup>
