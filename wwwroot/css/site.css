@@ -29,8 +29,9 @@ body {
     background-color: lightgray;
 }
 
-.custom-img {
-    height: 200px;
+.banner-img {
+    width: 100%;
+    height: 30vw;
     object-fit: cover;
 }
 

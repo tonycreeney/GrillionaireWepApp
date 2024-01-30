@@ -1,11 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace GrillionaireWepApp.Pages.Checkout
+namespace GrillionaireWepApp.Pages
 {
-    public class IndexModel : PageModel
+    public class BasketModel : PageModel
     {
-        public void OnGet()
+		private readonly ILogger<BasketModel> _logger;
+
+		public BasketModel(ILogger<BasketModel> logger)
+		{
+			_logger = logger;
+		}
+		public void OnGet()
         {
         }
     }

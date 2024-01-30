@@ -1,11 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace GrillionaireWepApp.Pages.Menu
+namespace GrillionaireWepApp.Pages
 {
     public class MenuModel : PageModel
     {
-        public void OnGet()
+		private readonly ILogger<MenuModel> _logger;
+
+		public MenuModel(ILogger<MenuModel> logger)
+		{
+			_logger = logger;
+		}
+		public void OnGet()
         {
         }
     }

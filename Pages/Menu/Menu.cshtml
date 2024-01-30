@@ -1,11 +1,47 @@
 ﻿@page
-@model GrillionaireWepApp.Pages.Menu.MenuModel
+@model MenuModel
 @{
 	ViewData["Title"] = "Menu";
 }
 
-<div class="container-fluid p-0 m-0">
-	<div class="container-fluid">
-		<h1 class="text-center">Main Menu</h1>
-	</div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Category Sidebar -->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar fixed-sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#burgers">Burgers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#drinks">Drinks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desserts">Desserts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sides">Sides</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main content area where meals are listed -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 content-area">
+            <h2 id="burgers">Burgers</h2>
+            <!-- List of burgers goes here -->
+            <div class="menu-item">Classic Burger<a href="#">Order</a></div>
+            <div class="menu-item">Cheese Burger<a href="#">Order</a></div>
+            <!-- Repeat for other categories and items -->
+
+            <h2 id="drinks">Drinks</h2>
+            <!-- List of drinks goes here -->
+
+            <h2 id="desserts">Desserts</h2>
+            <!-- List of desserts goes here -->
+
+            <h2 id="sides">Sides</h2>
+            <!-- List of sides goes here -->
+        </main>
+
+        <!-- Basket Sidebar -->
+        <div class="col-md-3 d-none d-md-block basket-sidebar">
+            <h3>Your Basket</h3>
+            <p>Items you have selected will appear here...</p>
+            <!-- Basket items go here -->
+            <button class="btn btn-success">Checkout</button>
+        </div>
+    </div>
 </div>
