@@ -35,4 +35,39 @@ body {
     object-fit: cover;
 }
 
-.
+.sidebar {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+    .sidebar .nav-link {
+        color: black;
+        font-weight: 700;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-decoration: none;
+    }
+
+        .sidebar .nav-link:hover {
+            color: #495057;
+        }
+
+.main-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.container-fluid {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.nav-item:hover {
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+

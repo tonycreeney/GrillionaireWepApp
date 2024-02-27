@@ -1,0 +1,47 @@
+﻿@page
+@model InfoModel
+@{
+	ViewData["Title"] = "Account Details";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+            <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Member/Accounts/Info">Account Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Member/Accounts/OrderHistory">Order History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Member/Accounts/Settings">Account Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+            <div class="form-section">
+                <h2>Account Details</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="emailAddress" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <!-- Add more form fields as needed -->
+                </form>
+            </div>
+        </main>
+    </div>
+</div>
+
